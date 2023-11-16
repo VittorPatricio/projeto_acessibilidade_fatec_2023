@@ -1,3 +1,5 @@
+new window.VLibras.Widget();
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
