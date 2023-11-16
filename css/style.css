@@ -7,6 +7,7 @@
   box-sizing: border-box;
   font-family: 'Montserrat', 'Lato';
   overflow-x: hidden;
+  user-select: none;
 }
 
 main{
@@ -19,7 +20,6 @@ header{
   position: fixed;
   top: 0;
   z-index: 999;
-  user-select: none;
 }
 .navbar-expand-lg{
   display: flex;
