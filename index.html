@@ -9,6 +9,7 @@
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <link href="css/bootstrap.css" rel="stylesheet" />
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="shortcut icon" href="./assets/img/icon.svg" type="image/x-icon">
     </head>
     <body>
         <main>
@@ -25,7 +26,7 @@
                             <a class="nav-link" href="#portfolio"> Portfolio </a>
                         </li>
                         <li class="nav-item">
-                            <a class="smooth-scroll nav-link" href="#sobre"> Sobre </a>
+                            <a class="nav-link" href="#sobre"> Sobre </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact"> Contato </a>
@@ -36,12 +37,12 @@
     </header>
         <section class="inicio" id="page-top">
                 <div class="esquerda">
-                    <img id="perfil" src="assets/img/avataaars.svg" alt="..." />
-                    <h1 class="text-uppercase">Vittor Patricio</h1>
+                    
+                    <img id="perfil" src="assets/img/avatar.jpg" alt="..." />
+                    <h1>Vittor Patricio</h1>
                 </div>
                 <div class="direita">
-                    <p class="flex-column text-uppercase">Web designer - Roteirista</p>
-                    <p class="flex-column text-uppercase">Progamador - Estudante</p>
+                    <h2>Web designer - Roteirista</h2><h2>Progamador - Estudante </h2>
                 </div>
         </section>
         <!-- Portfolio Section-->
@@ -288,9 +289,9 @@
                 </div>
 
         </section>
-        <section class="page-section bg-primary text-white mb-0 " id="sobre">
+        <section class="secao-sobre" id="sobre">
 
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-white">Sobre</h2>
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
@@ -302,81 +303,85 @@
                 </div>
 
         </section>
-        <section class="page-section" id="contact">
+        <section class="secao-contato" id="contact">
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        <form id="formularioDecontato">
+                            
+                            <div class="form-floating">
+                                <input class="form-control" id="name" type="text" placeholder="Digite o seu nome..." data-sb-validations="required"  required/>
+                                <label for="name">Nome inteiro</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">O nome é obrigatório.</div>
                             </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                           
+                            <div class="form-floating">
+                                <input class="form-control" id="email" type="email" placeholder="nome@exemplo.com" data-sb-validations="O email é obrigatório" required/>
+                                <label for="email">Endereço de Email</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">O email é obrigatório</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">O Email não é válido.</div>
                             </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            
+                            <div class="form-floating">
+                                <input class="form-control" id="phone" type="tel" placeholder="(12) 3456-789" data-sb-validations="required" required/>
+                                <label for="phone">Número de telefone</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">O número de telefone é obrigatório.</div>
                             </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                           
+                            <div class="form-floating">
+                                <textarea class="form-control" id="message" type="text" placeholder="Escreva sua mensagem aqui..." style="height: 10rem" data-sb-validations="required" required></textarea>
+                                <label for="message">Mensagem</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">Uma mensagem é obrigatória.</div>
                             </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
+                            
+
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                    <div class="fw-bolder">Informações Enviadas!</div>
                                 </div>
                             </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                            
+                            
+                            <button class="botao-enviar" type="submit">Enviar</button>
                         </form>
-                    </div>
-                </div>
         </section>
-        <footer class="footer text-center">
-                <div class="row">
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Localização</h4>
-                        <p class="lead mb-0">
+        <footer>
+                    <div class="localizacao">
+                        <h4>Localização</h4>
+                        <p class="lead">
                             Monte Alto, 15910-000
                             <br />
                             São Paulo, Brasil
                         </p>
                     </div>
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+
+                    <div class="telefone">
+                        <h4>Localização</h4>
+                        <p class="lead">
+                            Monte Alto, 15910-000
+                            <br />
+                            São Paulo, Brasil
+                        </p>
                     </div>
-                </div>
+                    <div class="redes-sociais">
+                        <h4>Redes Sociais</h4>
+                        <div class="icon">
+                        <a class="btn btn-outline-light btn-social" href="#!">
+                            <i class="fab fa-fw fa-facebook-f"></i>
+                        </a>
+
+                        <a class="btn btn-outline-light btn-social" href="#!">
+                            <i class="fab fa-fw fa-instagram"></i>
+                        </a>
+
+                        <a class="btn btn-outline-light btn-social" href="#!">
+                            <i class="fab fa-fw fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    </div>
         </footer>
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
@@ -384,8 +389,13 @@
               <div class="vw-plugin-top-wrapper"></div>
             </div>
           </div>
+
+          
     </main>
-          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget();
+    </script>
               <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
               <script src="js/scripts.js"></script>
               <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>

@@ -19,19 +19,20 @@ header{
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 800;
 }
 .navbar-expand-lg{
+
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 nav{
   text-transform: uppercase;
-  background-color: #212529;
+  background-color: #1e2c3c;
   position: relative;
   top: 0;
-  z-index: 1030;
+  z-index: 830;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -60,47 +61,64 @@ nav > .navbar-toggler{
   text-align: center;
 }
 
+.navbar-brand{
+  font-size: 2rem;
+}
+
 .nav-item > a {
+  font-size: 1.5rem;
   border-radius: 5px;
   width: 100%;
 }
 
-.divider-custom-icon > i{
-  background-color: red;
-}
-
 .inicio{
-  padding-top: 10%;
+  padding-top: 5%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   color: #fff;
   width: 100%;
   height: 90vh;
-  background-color: #301010;
+  background-color: #212529;
 }
 
 .esquerda{
-  width: 60%;
+  width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  text-align: center;
   flex-direction: column;
 }
+
+.esquerda > h1{
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
 
 .direita{
   width: 40%;
   height: 80%;
   display: flex;
+  text-align: center;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-direction: column;
+  gap: 10%;
+}
+
+.direita > h2{
+  text-transform: uppercase;
+  font-size: 2rem;
 }
 
 #perfil{
-  width: 10rem;
-  height: 10rem;
+  aspect-ratio: 2/4;
+  width: 50%;
+  height: 60%;
+  border-radius: 50%;
 }
 
 .flex-column{
@@ -112,3 +130,118 @@ nav > .navbar-toggler{
   text-align: center;
   font-size: 2rem;
 }
+
+
+.portfolio-item-caption{
+  background-color: #212529c8;
+}
+
+.secao-sobre{
+  width: 100%;
+  height: 52vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #212529;
+  color: #fff;  
+}
+
+.secao-contato{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5%;
+}
+
+#formularioDecontato{
+width: 50%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+}
+
+.form-floating{
+  width: 100%;
+}
+
+.botao-enviar{
+  margin-top: 10%;
+  padding: 6px 15px;
+  border-radius: 10px;
+  width: 20%;
+  background-color: #212529;
+  color: #fff;
+  border: 2px solid #212529;
+  transition: 0.4s;
+}
+
+.botao-enviar:hover{
+  color: #212529;
+  padding: 8px 18px;
+  width: 25%;
+  background-color: transparent;
+  animation: 0.4s;
+}
+
+.localizacao{
+  width: 45%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+}
+
+.localizacao > h4 {
+  text-transform: uppercase;
+}
+
+.telefone{
+  width: 45%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+}
+
+.telefone > h4 {
+  text-transform: uppercase;
+}
+
+.redes-sociais{
+  width: 45%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+}
+
+.redes-sociais > h4 {
+  text-transform: uppercase;
+}
+
+.redes-sociais > .icon{
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer{
+  color: #fff;
+  background-color: #212529;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
