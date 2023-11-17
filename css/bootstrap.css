@@ -898,7 +898,6 @@ progress {
   }
   .row-cols-sm-auto > * {
     flex: 0 0 auto;
-    width: auto;
   }
   .row-cols-sm-1 > * {
     flex: 0 0 auto;
@@ -926,7 +925,7 @@ progress {
   }
   .col-sm-auto {
     flex: 0 0 auto;
-    width: auto;
+
   }
   .col-sm-1 {
     flex: 0 0 auto;
@@ -1067,7 +1066,7 @@ progress {
   }
   .row-cols-md-auto > * {
     flex: 0 0 auto;
-    width: auto;
+
   }
   .row-cols-md-1 > * {
     flex: 0 0 auto;
@@ -1095,7 +1094,7 @@ progress {
   }
   .col-md-auto {
     flex: 0 0 auto;
-    width: auto;
+
   }
   .col-md-1 {
     flex: 0 0 auto;
@@ -1236,7 +1235,7 @@ progress {
   }
   .row-cols-lg-auto > * {
     flex: 0 0 auto;
-    width: auto;
+
   }
   .row-cols-lg-1 > * {
     flex: 0 0 auto;
@@ -1264,7 +1263,7 @@ progress {
   }
   .col-lg-auto {
     flex: 0 0 auto;
-    width: auto;
+
   }
   .col-lg-1 {
     flex: 0 0 auto;
@@ -1405,7 +1404,7 @@ progress {
   }
   .row-cols-xl-auto > * {
     flex: 0 0 auto;
-    width: auto;
+
   }
   .row-cols-xl-1 > * {
     flex: 0 0 auto;
@@ -1433,7 +1432,7 @@ progress {
   }
   .col-xl-auto {
     flex: 0 0 auto;
-    width: auto;
+
   }
   .col-xl-1 {
     flex: 0 0 auto;
@@ -1574,7 +1573,7 @@ progress {
   }
   .row-cols-xxl-auto > * {
     flex: 0 0 auto;
-    width: auto;
+
   }
   .row-cols-xxl-1 > * {
     flex: 0 0 auto;
@@ -1602,7 +1601,7 @@ progress {
   }
   .col-xxl-auto {
     flex: 0 0 auto;
-    width: auto;
+
   }
   .col-xxl-1 {
     flex: 0 0 auto;
@@ -5220,7 +5219,6 @@ textarea.form-control-lg {
   --bs-modal-zindex: 1055;
   --bs-modal-width: 500px;
   --bs-modal-padding: 1rem;
-  --bs-modal-margin: 0.5rem;
   --bs-modal-color: ;
   --bs-modal-bg: #fff;
   --bs-modal-border-color: var(--bs-border-color-translucent);
@@ -5251,9 +5249,6 @@ textarea.form-control-lg {
 }
 
 .modal-dialog {
-  position: relative;
-  width: auto;
-  margin: var(--bs-modal-margin);
   pointer-events: none;
 }
 .modal.fade .modal-dialog {
@@ -5366,13 +5361,7 @@ textarea.form-control-lg {
 
 @media (min-width: 576px) {
   .modal {
-    --bs-modal-margin: 1.75rem;
     --bs-modal-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  }
-  .modal-dialog {
-    max-width: var(--bs-modal-width);
-    margin-right: auto;
-    margin-left: auto;
   }
   .modal-sm {
     --bs-modal-width: 300px;
@@ -7500,9 +7489,6 @@ textarea.form-control-lg {
   margin: 3rem !important;
 }
 
-.m-auto {
-  margin: auto !important;
-}
 
 .mx-0 {
   margin-right: 0 !important;
@@ -8469,9 +8455,7 @@ textarea.form-control-lg {
   .m-sm-5 {
     margin: 3rem !important;
   }
-  .m-sm-auto {
-    margin: auto !important;
-  }
+
   .mx-sm-0 {
     margin-right: 0 !important;
     margin-left: 0 !important;
@@ -8964,9 +8948,6 @@ textarea.form-control-lg {
   }
   .m-md-5 {
     margin: 3rem !important;
-  }
-  .m-md-auto {
-    margin: auto !important;
   }
   .mx-md-0 {
     margin-right: 0 !important;
@@ -9461,9 +9442,7 @@ textarea.form-control-lg {
   .m-lg-5 {
     margin: 3rem !important;
   }
-  .m-lg-auto {
-    margin: auto !important;
-  }
+ 
   .mx-lg-0 {
     margin-right: 0 !important;
     margin-left: 0 !important;
@@ -9957,9 +9936,7 @@ textarea.form-control-lg {
   .m-xl-5 {
     margin: 3rem !important;
   }
-  .m-xl-auto {
-    margin: auto !important;
-  }
+
   .mx-xl-0 {
     margin-right: 0 !important;
     margin-left: 0 !important;
@@ -10453,9 +10430,7 @@ textarea.form-control-lg {
   .m-xxl-5 {
     margin: 3rem !important;
   }
-  .m-xxl-auto {
-    margin: auto !important;
-  }
+
   .mx-xxl-0 {
     margin-right: 0 !important;
     margin-left: 0 !important;
