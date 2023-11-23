@@ -22,7 +22,6 @@ header{
   z-index: 800;
 }
 .navbar-expand-lg{
-
   display: flex;
   justify-content: space-between;
 }
@@ -61,12 +60,8 @@ nav > .navbar-toggler{
   text-align: center;
 }
 
-.navbar-brand{
-  font-size: 2rem;
-}
-
 .nav-item > a {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border-radius: 5px;
   width: 100%;
 }
@@ -94,7 +89,7 @@ nav > .navbar-toggler{
 
 .esquerda > h1{
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 
@@ -111,12 +106,12 @@ nav > .navbar-toggler{
 
 .direita > h2{
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 #perfil{
-  aspect-ratio: 2/4;
-  width: 50%;
+  aspect-ratio: 2/2;
+  width: 45%;
   height: 60%;
   border-radius: 50%;
 }
@@ -181,6 +176,32 @@ nav > .navbar-toggler{
   width: 80%;
   height: auto;
 }
+.portfolio-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+.portfolio-item-caption{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.img-fluid{
+  height: 50%;
+  width: 50%;
+}
+
+.portfolio-item-caption-content{
+  text-align: center;
+  color: #fff;
+}
 
 #portfolioModal6{
   padding-right: 0;
@@ -235,9 +256,20 @@ nav > .navbar-toggler{
   background-color: #212529c8;
 }
 
+.page-section-heading{
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+h2{
+  margin: 0;
+  padding: 0;
+}
+
 .secao-sobre{
   width: 100%;
-  height: 65vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -337,9 +369,9 @@ justify-content: space-between;
 }
 
 .redes-sociais > .icon{
-  width: 35%;
+  width: 50%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 footer{
