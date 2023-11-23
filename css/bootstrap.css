@@ -5322,8 +5322,7 @@ textarea.form-control-lg {
   flex-shrink: 0;
   align-items: center;
   justify-content: space-between;
-  padding: var(--bs-modal-header-padding);
-  border-bottom: var(--bs-modal-header-border-width) solid var(--bs-modal-header-border-color);
+
   border-top-left-radius: var(--bs-modal-inner-border-radius);
   border-top-right-radius: var(--bs-modal-inner-border-radius);
 }
@@ -10803,7 +10802,6 @@ html {
 }
 
 .divider-custom {
-  margin: 1.25rem 0 1.5rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -10949,15 +10947,11 @@ html {
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
-  display: block;
-  max-width: 25rem;
   border-radius: 0.5rem;
   overflow: hidden;
 }
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
-  top: 0;
-  left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
 }
